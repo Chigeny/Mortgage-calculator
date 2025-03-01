@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mortgage Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        
+    <Form>
+        <h1> Mortgage Calculator</h1>
+        
+        <label for="mortgageAmount">Mortgage Amount</label> <br><br>
+       <div class="amount"> <input type="number" id="mortgageAmount" name="mortgageamount" value="0" placeholder="$" style="width: 300px;"><br><br></div>
+
+     <div class="part1"><div class="mortgage"> <label for="mortgageTerm">Mortgage Term</label><br><br>
+        <input type="number" id="mortgageamount" name="mortgageterm" value="0"  placeholder="years"><br><br></div>
+      
+      <div class="interest" ><label for="interestRate">Interest Rate</label><br><br>
+        <input type="number"  id="interestRate" name="interestrate" value="0"  placeholder="%"></div></div>
+
+        <label for="mortgagetype">Mortgage Type</label><br><br>
+
+       <div class="repayment"><input type="radio" id="repayment" name="repayment" value="Repayment">
+        <label for="repayment">Repayment</label><br><br></div>
+
+        <div class="interestonly"><input type="radio" id="interestonly" name="interestonly" value="Interest Only">
+        <label for="interestonly">Interest Only</label><br><br></div>
+
+        <input type="button" value="Calculate Repayment" id="calculateRepayment" onclick="multiplyBy()"/>  <br><br>
+        
+        <input type="button" value="Reset" onclick="reset()"/> <br><br>
+    </form>
+
+        <div class="part2">
+        <img src="/images/2.jpg" alt="business picture" width="80px" height="150px" >
+        <h3>Results shown here</h3>
+        <p>Complete the form and click "calculate repayments to<br>see what your monthly repayments would be</p>
+   
+</div>
+</div>
+<script src="/script.js"></script>
+</body>
+</html>
